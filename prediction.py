@@ -44,8 +44,8 @@ def training_loop(estimator,skf,X_train,y_train):
     return predictions
     
 #read training and test datasets
-train = read_file(path='train.csv')
-test = read_file(path='test.csv')
+train = read_file(path='data/train.csv')
+test = read_file(path='data/test.csv')
 
 #Combine both train and test sets for easy wrangling
 all_data = pd.concat([train,test]).reset_index(drop=True)
