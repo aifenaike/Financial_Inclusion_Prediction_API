@@ -13,8 +13,6 @@ Now it’s clear why exposing your model’s code as an API makes it flexible an
 ### Dataset
 In this project, we will work with real-world data. The main dataset contains demographic information and what financial services are used by approximately 33,600 individuals across East Africa. This data was extracted from various Finscope surveys ranging from 2016 to 2018. 
 
-dataset from [TREC 2019 Deep Learning Track](https://microsoft.github.io/msmarco/TREC-Deep-Learning-2019). The dataset consists of 367,013 queries and 3.2 million documents. However, due to the unavailability of resources such as GPU and time, we will work with only a subset of this data.
-
 ### Results
 The goal is to predict the likelihood of the person having a bank account or not (Yes = 1, No = 0), for each unique id belonging to individuals across four East African countries - Kenya, Rwanda, Tanzania, and Uganda. Evaluation measures for a binary classification model are used to assess how accurate prediictions are. Here I employed **The Mean Absolute Error (MAE)** as the evaluation metric. The MAE is a measure of how many scenarios were falsely claasified ( 1- Accuracy). The model was optimized towards reducing this measure of false prediction.
 Using a seven fold stratified cross validation split, **I was able to obtain a Mean MAE score on test set: 0.11148367514540215. i.e an Accuracy of ~88.852%.**
