@@ -3,6 +3,9 @@ A Machine Learning System for predicting depression tendencies from socio-econom
 
 
 ## Machine Learning Models as APIs
+Application Programming Interfaces (or APIs for short) have been around for a long time and basically provide a standardized way of communication between two software applications that are not necessarily of the same type.
+
+Applied to our context of data science, an API allows for the communication between a web page or app and our ML application. The API opens up certain user-defined URL endpoints, which can be used to send or receive requests with data. These endpoints are not dependent on the application: if you update your algorithm, the interface will stay the same. This minimizes the work required to update the running application.
 
 
 ## Novelty
